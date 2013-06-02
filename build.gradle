@@ -14,7 +14,6 @@ task wrapper(type: Wrapper) {
     gradleVersion = '1.6'
 }
 
-
 task(generate, dependsOn: 'classes', type: JavaExec) {
             main = 'org.antlr.v4.Tool'
             classpath = sourceSets.main.runtimeClasspath
